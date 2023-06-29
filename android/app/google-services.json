@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "164172515315",
+    "project_id": "meal-c6cfe",
+    "storage_bucket": "meal-c6cfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164172515315:android:bb29cd3d957a40ec66f486",
+        "android_client_info": {
+          "package_name": "com.example.meal_game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164172515315-9q2s035kqmqdo9iapppjvsb4q9jrkcqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrVcjAqSgiKcj_w_DbtAyIp3FlsTg3E3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164172515315-9q2s035kqmqdo9iapppjvsb4q9jrkcqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
