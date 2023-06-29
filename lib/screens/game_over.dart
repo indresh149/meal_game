@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class GameOverScreen extends StatelessWidget {
+  const GameOverScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     double fem =
@@ -13,7 +14,7 @@ class GameOverScreen extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 640 * fem,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xffffffff),
       ),
       child: Center(
@@ -25,7 +26,7 @@ class GameOverScreen extends StatelessWidget {
             fontWeight: FontWeight.w400,
             height: 1.1425 * ffem / fem,
             letterSpacing: 4.8 * fem,
-            color: Color(0xff3e8b3a),
+            color: const Color(0xff3e8b3a),
           ),
         ),
       ),

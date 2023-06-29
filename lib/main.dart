@@ -7,29 +7,33 @@ import 'package:firebase_core/firebase_core.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
       routes: {
-        '/next': (context) => CameraScreen(),
-        '/final': (context) => GameOverScreen(),
+        '/next': (context) => const CameraScreen(),
+        '/final': (context) => const GameOverScreen(),
       },
     );
   }
 }
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.fromLTRB(66, 492, 65, 92),
+        padding: const EdgeInsets.fromLTRB(66, 492, 65, 92),
         width: double.infinity,
         height: 640,
         decoration: const BoxDecoration(
@@ -46,7 +50,7 @@ class HomeScreen extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             decoration: BoxDecoration(
-              color: Color(0xFF3E8B3A),
+              color: const Color(0xFF3E8B3A),
               borderRadius: BorderRadius.circular(50),
               boxShadow: const [
                 BoxShadow(
@@ -61,9 +65,9 @@ class HomeScreen extends StatelessWidget {
                 'Share your meal',
                 style: GoogleFonts.andika(
                   textStyle: const TextStyle(
-                    fontSize: 25, 
+                    fontSize: 25,
                     fontWeight: FontWeight.w400,
-                    color: Colors.white, 
+                    color: Colors.white,
                   ),
                 ),
               ),
